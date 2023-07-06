@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,34 +15,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.purple,
-          centerTitle: true,
-          title: const Text('Welcome!'),
-        ),
-        body: Center(
-          child: ElevatedButton(
-            onPressed: () {},
-            child: const Text('Join'),
-          ),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.purple,
-          items: const [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home, color: Colors.white),
-            ),
-            BottomNavigationBarItem(
-              label: 'Settings',
-              icon: Icon(Icons.settings, color: Colors.white),
-            ),
-          ],
-        ),
-      ),
+      home: WelcomePage()
     );
   }
 }
