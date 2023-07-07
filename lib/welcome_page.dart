@@ -37,7 +37,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   Navigator.of(context).push(
                     MaterialPageRoute( 
                       builder:(BuildContext context){
-                      return const RegisterationPage();
+                      return RegisterationPage();
                     },
                   ),
                   );
